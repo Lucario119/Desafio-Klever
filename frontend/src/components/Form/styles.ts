@@ -8,8 +8,8 @@ export const Container = styled.div`
   border-radius: 0.8rem;
   margin: -3.2rem auto 3.2rem;
   padding-top: 2.4rem;
- 
-  > form {
+
+   > form {
     > fieldset {
       border: 0;
       padding: 0 5rem;
@@ -23,7 +23,7 @@ export const Container = styled.div`
         height: 5.6rem;
         margin-top: 0.8rem;
         border-radius: 0.8rem;
-        background-color: #FFF;
+        background-color: #fff;
         border: 1px solid #ccc;
         outline: 0;
         padding: 0 1.6rem;
@@ -37,7 +37,7 @@ export const Container = styled.div`
         justify-content: space-between;
         width: 100%;
         padding-bottom: 1.6rem;
-        border-bottom: 1px solid #09c90c;
+        border-bottom: 1px solid #000;
       }
     }
     > footer {
@@ -47,18 +47,19 @@ export const Container = styled.div`
       align-items: center;
       justify-content: space-between;
       > p {
-        color: #9c98a6;
+        color: #000;
       }
       > button {
         width: 20rem;
         height: 6rem;
         cursor: pointer;
         border-radius: 0.6rem;
-        background: #f0f0f0;
+        background: #fff;
+        border: 1px solid #ccc;
         font: #000 500;
 
         &:hover {
-          background-color: #c0c0c0;
+          background-color: #f0f0f0;
         }
       }
     }
@@ -68,29 +69,31 @@ export const Container = styled.div`
 export const Localization = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top:1rem;
+  margin-top: 1rem;
   width: 100%;
 
   > div {
     display: flex;
     flex-direction: column;
     > select {
-      background-color: #ccc;
+      background-color: #fff;
       border: 0;
 
       padding: 16px 24px;
       font-size: 16px;
-
+      font: #000;
       border-radius: 8px;
+      border: 1px solid #ccc;
 
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-
+      &:focus {
+        border: 1px solid #ccc;
+      }
       > option {
         &:first-child {
-          color: #fff;
-          padding: 4px 0;
+          color: #000;
         }
       }
     }

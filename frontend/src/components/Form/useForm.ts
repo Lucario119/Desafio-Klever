@@ -87,7 +87,7 @@ const useForm = (callback: Function, validate: Function) => {
     });
   };
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault();
 
     const { name, email, whatsapp, social_medias } = values;
@@ -116,7 +116,7 @@ const useForm = (callback: Function, validate: Function) => {
     if (Object.keys(errors).length === 0 && isSubmitting) {
       callback();
     }
-  }, [errors]);
+  }, [errors, isSubmitting,callback]);
 
   return {
     handleChange,

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Container, Localization } from './styles';
 import useForm from './useForm';
 import validate from './validateInfo';

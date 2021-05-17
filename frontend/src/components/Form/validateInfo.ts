@@ -19,24 +19,24 @@ export default function validateInfo(values: IValues) {
   };
 
   if (!values.name.trim()) {
-    errors.name = '*Necessário preencher nome';
+    errors.name = '*Necessário preencher esse campo';
   } else if (values.name.length < 5) {
     errors.name = '*Nome deve ter pelo menos mais de 5 caracteres';
   }
 
   if (!values.email) {
-    errors.email = '*Necessário preencher email';
+    errors.email = '*Necessário preencher esse campo';
   } else if (!emailRegex.test(values.email)) {
     errors.email = '*Endereço de email inválido';
   }
   if (!values.whatsapp) {
-    errors.whatsapp = '*Necessário preencher whatsapp';
+    errors.whatsapp = '*Necessário preencher esse campo';
   } else if (!phoneRegex.test(values.whatsapp)) {
     errors.whatsapp = '*Número de telefone inválido';
   }
 
   if (!values.social_medias) {
-    errors.social_medias = '*Necessário preencher redes sociais';
+    errors.social_medias = '*Necessário preencher esse campo';
   } else if (!urlRegex.test(values.social_medias)) {
     errors.social_medias = 'Esta não é uma url válida';
   }

@@ -21,6 +21,8 @@ export const Container = styled.div`
     justify-content: center;
     > h1 {
       margin-bottom: 6rem;
+      margin-left: 45px;
+
       font-size: 6rem;
       max-width: 75vw;
       color: #fefefe;
@@ -28,14 +30,15 @@ export const Container = styled.div`
 
     > a {
       > button {
-        width: 10rem;
+        width: 15rem;
         height: 6rem;
         cursor: pointer;
         border-radius: 0.6rem;
         background: rgba(249, 0, 0, 1);
+        border: 1px solid rgba(2, 0, 36, 1);
         color: #fefefe;
         &:hover {
-          background-color: #c0c0c0;
+          background-color: red;
         }
       }
     }
